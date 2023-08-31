@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:inherit;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(bearded-male-organizing-his-tasks-using-sticky-notes.jpg);
+    height: 100vh;
+    background-size:cover;
+    background-origin: border-box;
+   background-repeat: no-repeat
+    
+}
+
+.heading h1{
+    margin-top: 5vh;
+    font-size: 3rem;
+   display: flex;
+   justify-content: center;
+   color: antiquewhite;
+
+}
+
+.taskadder{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 8vh;
+    height: 30vh;
+    border: 0px solid black;
+    border-radius: 15px;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left:1vw ;
+    margin-right: 1vw;
+    
+    
+    
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 2vw;
+    color: aliceblue;
+    
+}
+.section{
+    display: flex;
+    font-size: 1.5rem;
+    
+    
+    
+    
+    flex-direction: column;
+   
+    
+    
+}
+
+input,select{
+    margin-top: 1vh;
+    padding: 0.5rem ;
+    width: 17vw;
+    border-radius: 10px;
+   
+}
+.addbutton{
+    
+    
+    display: flex;
+    
+    
+    align-content: center;
+    justify-content: center;
+    
+    padding: 0.9rem ;
+    width: 14vw;
+    
+    border-radius: 10px;
+    
+   
+    color: white;
+    background-color: gray;
+    
+    font-size: 1.2rem;
+    margin: auto;
+    margin-top: 4vh;
+}
+
+
+
+
+
+.table-container{
+    
+    background-color: whitesmoke;
+   margin: 4vh auto ;
+   height: fit-content;
+   width: 90vw;
+   
+}
+table{
+    width: 100%;
+   
+}
+
+.table-container th {
+    padding: 2vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0,0.2);
+    font-size: 1.2rem;
+    
+    
+}
+
+.table-container td {
+    padding: 2vh;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #353536;
+    
+}
+
+
+
+ .edit-button{
+    background-color: #184dec;
+    color:white;
+    font-weight: bold;
+  
+ }
+ .delete-button{
+    background-color: rgb(136, 17, 17);
+   color:white;
+    font-weight: bold;
+  
+ }
+ 
+  
+ .error{
+    position: relative;
+    top: 1vh;
+    
+    font-size: 1.2rem;
+    color: red;
+ }
+
+ .button{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    
+   
+   
+
+ }
+
+ .table-container{
+    
+    background-color: white;
+   margin: 80px auto ;
+   height: fit-content;
+   width: 90%;
+   overflow: auto;
+}
+table{
+    width: 100%;
+   
+}
+
+.table-container th {
+    padding: 5px;
+    text-align: center;
+    background-color:  #11b16c;
+    font-size: 18px;
+    color: white;
+    
+}
+
+.table-container td {
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    color: #353536;
+    
+}
+
+ .parentTaskAction{
+    align-items: end;
+ }
+ .parentRow{
+    margin-top: 20px;
+ }
+ .parentRow td{
+    padding: 10px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+  
+
+ }
+ .parentRowdata{
+    
+    
+    font-size: 24px;
+    padding: 55px;
+    font-weight: 700;
+
+ }
+  .edit-button{
+    background-color: #4670ec;
+    color:white;
+    font-weight: bold;
+  
+ }
+ .delete-button{
+    background-color: rgb(128, 17, 17);
+   color:white;
+    font-weight: bold;
+  
+ }
+ .addSubtask-button{
+    background-color: rgb(8, 94, 8);
+    color:white;
+    font-weight: bold;
+  
+ }
+

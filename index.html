@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="subtask.js"></script>
+</head>
+<body>
+    <div class="heading">  <h1>Task managment system</h1> </div>
+   
+    <div class="taskadder" id="parenttask" >
+
+       <form >
+            <div class="form">
+
+        <div class="section">
+            <label for="taskid">Task Id</label>
+            <input type="name" name="task id" id="taskid"   placeholder="Enter task Id" >
+            <label for="id error" style="display: none;"  class="error" id="iderror"></label>
+        </div>
+
+        <div class="section">
+            <label for="">Task Name</label>
+            <input type="text" name="task name" id="taskname" placeholder="enter task Name" >
+            <label for="taskname error" style="display: none;"  class="error"  id="nameerror">error</label>
+        </div>
+
+        <div class="section">
+            <label for="">Start Date</label>
+            <input type="date" name="task start date" id="taskstartdate" >
+            <label for="taskname error" style="display: none; "   class="error"  id="startdateerror">error</label>
+        </div>
+
+        <div class="section">
+            <label for="">End Date</label>
+            <input type="date" name="task end date" id="taskenddate" >
+            <label for="taskenddae error" style="display: none;"   class="error" id="enddateerror">error</label>
+        </div>
+
+
+        <div class="section">
+            <label for="">Task Status</label>
+            <select name="status" id="taskstatus">
+                <option   value="status">Status</option>
+                <option  selected value="Started">Started</option>
+                <option  value="in progress">In Progress</option>
+                <option   value="Due passed">Due Passed</option>
+                <option  value="completed">Completed</option>
+            </select>
+            <label for="taskstatus error" style="display: none;" class="error" id="statuserror">error</label>
+        </div>
+        </div>
+        <button onclick="add_task()" class="addbutton"  type="button">ADD TASK</button>
+       
+            
+        
+    
+        </form>
+
+       
+
+    </div>
+
+    <div class="taskadder" id="childtask" style="display: none;"  >
+
+        <form >
+             <div class="form">
+ 
+         <div class="section">
+             <label for="taskid">Task Id</label>
+             <input type="name" name="task id" id="subtaskid"   placeholder="Enter task Id" >
+             <label for="id error" style="display: none;"  class="error" id="iderror"></label>
+         </div>
+ 
+         <div class="section">
+             <label for="">Task Name</label>
+             <input type="text" name="task name" id="subtaskname" placeholder="enter task Name" >
+             <label for="taskname error" style="display: none;"  class="error"  id="nameerror">error</label>
+         </div>
+ 
+         <div class="section">
+             <label for="">Start Date</label>
+             <input type="date" name="task start date" id="subtaskstartdate" >
+             <label for="taskname error" style="display: none; "   class="error"  id="startdateerror">error</label>
+         </div>
+ 
+         <div class="section">
+             <label for="">End Date</label>
+             <input type="date" name="task end date" id="subtaskenddate" >
+             <label for="taskenddae error" style="display: none;"   class="error" id="enddateerror">error</label>
+         </div>
+ 
+ 
+         <div class="section">
+             <label for="">Task Status</label>
+             <select name="status" id="subtaskstatus">
+                 <option   value="status">Status</option>
+                 <option  selected value="Started">Started</option>
+                 <option  value="in progress">In Progress</option>
+                 <option   value="Due passed">Due Passed</option>
+                 <option  value="completed">Completed</option>
+             </select>
+             <label for="taskstatus error" style="display: none;" class="error" id="statuserror">error</label>
+         </div>
+         </div>
+         
+            <button  class="addbutton" onclick="parent_task()" type="button"> GOBACK T</button>
+         
+     
+         </form>
+ 
+        
+ 
+     </div>
+
+    <div class="table-container">
+        <table class="table" id="show">
+            
+            <tbody class="taskTable-tbody">
+                
+    
+            </tbody>
+            
+        </table>
+       </div>
+    
+</body>
+</html>
